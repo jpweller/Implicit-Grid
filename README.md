@@ -17,6 +17,8 @@ a sass grid system based on percentages
     pad *
     inline *
     shift *   - args: Columns-to-shift: 0 (can be positive or negative)
+    fill-left *   - args: Cols to Pad: 1
+    fill-right *  - args: Cols to Pad: 1
     
 ####the column generater
 
@@ -36,11 +38,7 @@ a sass grid system based on percentages
     gutter-padding-top     - args: Multiple: 1
     gutter-padding-right 
     gutter-padding-left 
-    
-####add padding inside your columns that will line up on the grid
 
-    fill-left *   - args: Cols to Pad: 1
-    fill-right *  - args: Cols to Pad: 1
 
 Take note that mixins marked with * must be used above col-imp or col to work properly
 
