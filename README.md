@@ -16,26 +16,26 @@ a sass grid system based on percentages
     last *
     pad *
     inline *
-    shift *   - args: Columns-to-shift: 0 (can be positive or negative)
-    fill-left *   - args: Cols to Pad: 1
-    fill-right *  - args: Cols to Pad: 1
+    shift *       - args: $Columns-to-shift: 0 (can be positive or negative)
+    fill-left *   - args: $Cols-to-Pad: 1
+    fill-right *  - args: $Cols-to-Pad: 1
     
 ####the column generater
 
-    col-imp   - args: Col-Width of Parent-Size, Last: false, Col shift: 0
-    col     - args: Col-Width of Parent-Size, Last: false, Col shift: 0, Inline: false
+    col-imp   - args: $Col-Width of $Parent-Size
+    col       - args: $Col-Width of $Parent-Size
 
 ####add margin to elements the same width as your gutters
 
-    gutter-margin-bottom   - args: Multiple: 1
-    gutter-margin-top     - args: Multiple: 1
+    gutter-margin-bottom   - args: $Multiple: 1
+    gutter-margin-top      - args: $Multiple: 1
     gutter-margin-right 
     gutter-margin-left   
 
 ####add padding to elements the same width as your gutters
 
-    gutter-padding-bottom   - args: Multiple: 1
-    gutter-padding-top     - args: Multiple: 1
+    gutter-padding-bottom   - args: $Multiple: 1
+    gutter-padding-top      - args: $Multiple: 1
     gutter-padding-right 
     gutter-padding-left 
 
