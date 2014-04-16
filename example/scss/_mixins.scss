@@ -1,0 +1,37 @@
+/******************************************************************
+Site: Grid Example
+Author: Jonathon Weller
+
+Stylesheet: Mixins & Constants Stylesheet
+
+******************************************************************/
+
+/*********************
+CLEARFIXIN'
+*********************/
+
+// Contain floats: nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix {
+  zoom: 1;
+  &:before, &:after { content: ""; display: table; }
+  &:after { clear: both; }
+}
+.clearfix {
+  @include clearfix;
+}
+
+
+
+/*********************
+FONTS
+*********************/
+
+@font-face {
+  font-family: 'BLOKKNeue-Regular';
+  src: url('fonts/BLOKKNeue-Regular.eot');
+  src: url('fonts/BLOKKNeue-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/BLOKKNeue-Regular.woff') format('woff'),
+  url('fonts/BLOKKNeue-Regular.svg#BLOKKNeue-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

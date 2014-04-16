@@ -1,0 +1,14 @@
+/******************************************************************
+Site Name: Grid Example
+Author: Jonathon Weller
+
+Stylesheet: 481px and Up Stylesheet
+
+******************************************************************/
+
+.col-imp-change {
+  @include col-imp(4);
+  code:after {
+    content: "@include col-imp(4);"
+  }
+}

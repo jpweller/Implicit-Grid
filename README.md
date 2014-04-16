@@ -1,9 +1,23 @@
 Implicit-Grid
 =============
 
-a sass grid system based on percentages
+A sass grid system based on percentages.
 
-###mixins avialable:
+#About
+Although it is called Implicit Grid, it also contains both implicit and explicit column generators.
+
+The col-imp mixin works differently than most grid systems. It requires an inner-wrapper (called inner-wrap) whose width is set larger than the wrapper (wrap) containing it. A wrapper around inner-wrapper is needed to hide the overflow. This hidden extra space allows each element inside the inner-wrap to have a right margin (even the last element!). Hence the imp, sort for implicit. This means you can rearrange these elements and not have to worry about clearing out the right margin on the last element. Whether you're rearranging the order via jQuery, changing elements' column width via media queries, or using js masonry.
+
+##Implicit Grid
+PROS: No last class needed.
+CONS: Extra markup to hide-overflow and have an inner-wrapper.
+
+##Explicit Grid
+PROS: No excess markup
+CONS: Need to explicitly specify last column.
+
+
+##mixins avialable:
 
 ####wrappers
 
@@ -17,8 +31,8 @@ a sass grid system based on percentages
     pad *
     inline *
     shift *       - args: $Columns-to-shift: 0 (can be positive or negative)
-    fill-left *   - args: $Cols-to-Pad: 1
-    fill-right *  - args: $Cols-to-Pad: 1
+    fill-left     - args: $Cols-to-Pad: 1
+    fill-right    - args: $Cols-to-Pad: 1
     
 ####the column generater
 
@@ -40,10 +54,8 @@ a sass grid system based on percentages
     gutter-padding-left 
 
 
-Take note that mixins marked with * must be used above col-imp or col to work properly
+* marked mixins must be used above col-imp or col to work properly
 
-
-col-imp works differently than most grid systems. It requires an inner-wrap whose width is set larger than the wrap containing it. A wrap around inner-wrap is needed to hide the overflow. This hidden extra space allows each element inside the inner-wrap to have a right margin (even the last element!). Hence the imp, sort for implicit. This means you can rearrange these elements and not have to worry about clearing out the right margin on the last element. Whether you're rearanging the order via jQuery, changing elements' column width via media queries, or using js masonry.
 
 ####using col-imp, your code would look like:
 
@@ -56,7 +68,7 @@ sass:
 html:
 
     <div class="wrapper">
-        <div class="hide-overflow"> <!-- only if needed -->
+        <div class="hide-overflow">
             <div class="inner-wrapper">
                 <div class="col-4"></div>
                 <div class="col-4"></div>
