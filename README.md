@@ -67,9 +67,9 @@ sass:
     
 html:
 
-    <div class="wrapper">
+    <div class="wrap">
         <div class="hide-overflow">
-            <div class="inner-wrapper">
+            <div class="inner-wrap">
                 <div class="col-4"></div>
                 <div class="col-4"></div>
                 <div class="col-4"></div>
