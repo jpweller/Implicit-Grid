@@ -1,3 +1,11 @@
+/******************************************************************
+Site: Grid Example
+Author: Jonathon Weller
+
+Stylesheet: Styles
+
+******************************************************************/
+
 @import "normalize";
 @import "grid/grid";
 @import "mixins";
@@ -7,10 +15,10 @@
 
 // LARGER MOBILE DEVICES
 @media only screen and (min-width: 481px) {
-  @import "481up";
+	@import "481up";
 }
 
 // TABLET & SMALLER LAPTOPS
 @media only screen and (min-width: 768px) {
-  @import "768up";
+	@import "768up";
 }

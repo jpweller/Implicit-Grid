@@ -5,112 +5,111 @@
 
 
 <div id="grid-overlay">
-    <div class="wrap">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
+	<div class="wrap">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
 </div>
 
 <div class="wrap">
 
 	<header>
 		<h1>Implicit Grid</h1>
-        <p>
-            <b>PROS: </b>No last class needed<br>
-            <b>CONS: </b>Extra markup to hide-overflow and have an inner-wrapper.
-        </p>
+		<p>
+			<b>PROS: </b>No last class needed<br>
+			<b>CONS: </b>Extra markup to hide-overflow and have an inner-wrapper.
+		</p>
 	</header>
 
-    <div class="hide-overflow">
+	<div class="hide-overflow">
 
-        <div class="inner-wrap clearfix">
+		<div class="inner-wrap clearfix">
 
-            <div id="col-imp-12" class="bar"><code>@include col-imp(12);</code></div>
+			<div id="col-imp-12" class="bar"><code>@include col-imp(12);</code></div>
 
-            <div class="info-imp">
-                <h2>Implicit columns don't need to include last</h2>
-            </div>
+			<div class="info-imp">
+				<h2>Implicit columns don't need to include last</h2>
+			</div>
 
-            <div id="col-imp-8" class="bar"><code>@include col-imp(8);</code></div>
-            <div id="col-imp-4" class="bar"><code>@include col-imp(4);</code></div>
+			<div id="col-imp-8" class="bar"><code>@include col-imp(8);</code></div>
+			<div id="col-imp-4" class="bar"><code>@include col-imp(4);</code></div>
 
-            <div class="info-imp">
-                <h2>Changing column size with media queries</h2>
-                <p>Change the size of your browswer window to see these boxes change the number of columns they use</p>
-            </div>
+			<div class="info-imp">
+				<h2>Changing column size with media queries</h2>
+				<p>Change the size of your browswer window to see these boxes change the number of columns they use</p>
+			</div>
 
-            <div class="col-imp-change bar"><code></code></div>
-            <div class="col-imp-change bar"><code></code></div>
-            <div class="col-imp-change bar"><code></code></div>
-            <div class="col-imp-change bar"><code></code></div>
+			<div class="col-imp-change bar"><code></code></div>
+			<div class="col-imp-change bar"><code></code></div>
+			<div class="col-imp-change bar"><code></code></div>
+			<div class="col-imp-change bar"><code></code></div>
 
-            <div class="info-imp">
-                <h2>The pad mixin extends it into the gutter</h2>
-            </div>
+			<div class="info-imp">
+				<h2>The pad mixin extends it into the gutter</h2>
+			</div>
 
-            <div id="imp-pad" class="bar"><code>@include pad;<br>@include col-imp(5);</code></div>
-            <div id="imp-pad-last" class="bar"><code>@include pad;<br>@include last;<br>@include col-imp(5);</code></div>
+			<div id="imp-pad" class="bar"><code>@include pad;<br>@include col-imp(5);</code></div>
+			<div id="imp-pad-last" class="bar"><code>@include pad;<br>@include last;<br>@include col-imp(5);</code></div>
 
-        </div>
+		</div>
 
-    </div>
+	</div>
 
-    <header>
-        <h1>Explicit Grid</h1>
-        <p>
-            <b>PROS: </b>No excess markup<br>
-            <b>CONS: </b>Need to include last
-        </p>
-    </header>
+	<header>
+		<h1>Explicit Grid</h1>
+		<p>
+			<b>PROS: </b>No excess markup<br>
+			<b>CONS: </b>Need to include last
+		</p>
+	</header>
 
-    <div id="col-12" class="bar"><code>@include col(12);</code></div>
+	<div id="col-12" class="bar"><code>@include col(12);</code></div>
 
-    <div id="col-5" class="bar two-lines"><code>@include col(5);</code></div>
-    <div id="col-7-last" class="bar two-lines"><code>@include last;</br>@include col(7);</code></div>
+	<div id="col-5" class="bar two-lines"><code>@include col(5);</code></div>
+	<div id="col-7-last" class="bar two-lines"><code>@include last;</br>@include col(7);</code></div>
 
-    <div id="col-6" class="bar">
-        <code>@include col(6);</code>
-        <div class="bar inner-bar col-2of6"><code>@include col(2 of 6);</code></div>
-        <div class="bar inner-bar col-2of6"><code>@include col(2 of 6);</code></div>
-    </div>
+	<div id="col-6" class="bar">
+		<code>@include col(6);</code>
+		<div class="bar inner-bar col-2of6"><code>@include col(2 of 6);</code></div>
+		<div class="bar inner-bar col-2of6"><code>@include col(2 of 6);</code></div>
+	</div>
 
-    <div id="col-3-last" class="bar"><code>@include last;</br>@include col(3);</code></div>
+	<div id="col-3-last" class="bar"><code>@include last;</br>@include col(3);</code></div>
 
-    <div class="clearfix"></div>
+	<div class="clearfix"></div>
 
-    <div id="text-image" class="bar">
-        <code>@include shift(1);</br>@include col(5);</code>
-        <p class="dummy-text">Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <div id="shift-left" class="fo-img inner-bar"><code>@include shift(-1);</br>@include col(3 of 5);</code></div>
-        <p class="dummy-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        <div id="shift-right" class="fo-img inner-bar"><code>@include last;<br>@include shift(-2);<br>@include inline;<br>@include col(4 of 5);</code></div>
-        <p class="dummy-text">Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-    </div>
+	<div id="text-image" class="bar">
+		<code>@include shift(1);</br>@include col(5);</code>
+		<p class="dummy-text">Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		<div id="shift-left" class="fo-img inner-bar"><code>@include shift(-1);</br>@include col(3 of 5);</code></div>
+		<p class="dummy-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		<div id="shift-right" class="fo-img inner-bar"><code>@include last;<br>@include shift(-2);<br>@include inline;<br>@include col(4 of 5);</code></div>
+		<p class="dummy-text">Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+	</div>
 
-    <div id="fill" class="bar">
-        <code>@include fill-left(1);</br>@include col(5);</code>
-        <p class="dummy-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-    </div>
+	<div id="fill" class="bar">
+		<code>@include fill-left(1);</br>@include col(5);</code>
+		<p class="dummy-text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+	</div>
 
-    <div id="pad" class="bar">
-        <code>@include pad;</br>@include col(5);</code>
-        <p class="dummy-text">Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper.</p>
-    </div>
+	<div id="pad" class="bar">
+		<code>@include pad;</br>@include col(5);</code>
+		<p class="dummy-text">Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper.</p>
+	</div>
 
-    <header class="info">
-        <p>Made by Jonathon Weller</p>
-        <p><a href="http://jpweller.com/">jpweller.com</a></p>
-    </header>
-
+	<header class="info">
+		<p>Made by Jonathon Weller</p>
+		<p><a href="http://jpweller.com/">jpweller.com</a></p>
+	</header>
 
 </div>

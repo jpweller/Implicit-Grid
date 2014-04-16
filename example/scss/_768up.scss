@@ -7,12 +7,12 @@ Stylesheet: Tablet & Small Desktop Stylesheet
 ******************************************************************/
 
 code {
-  font-size: 1em;
+	font-size: 1em;
 }
 
 .col-imp-change {
-  @include col-imp(3);
-  code:after {
-    content: "@include col-imp(3);"
-  }
+	@include col-imp(3);
+	code:after {
+		content: "@include col-imp(3);"
+	}
 }

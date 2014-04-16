@@ -24,7 +24,7 @@ $cols-before: 0 !default;
 // BORDER-BOX ALL THE THINGS! (http://paulirish.com/2012/box-sizing-border-box-ftw/)
 // YOU CAN DELETE THIS IF YOU INCLUDE BORDER-BOX BOX-SIZING ELSEWHERE
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing:    border-box;
-  box-sizing:         border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:		border-box;
+	box-sizing:				 border-box;
 }
