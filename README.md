@@ -54,7 +54,7 @@ CONS: Need to explicitly specify last column.
     gutter-padding-left 
 
 
-* marked mixins must be used above col-imp or col to work properly
+mixins marked with * must be used above col-imp or col to work properly
 
 
 ####using col-imp, your code would look like:
